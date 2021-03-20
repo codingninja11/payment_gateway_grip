@@ -61,7 +61,7 @@
                 <nav class="navbar navbar-expand-lg navbar-light">
                     <div class="container">
           
-                        <a class="navbar-brand logo_h" href="index.html" style="color:white;font-size:20px;font-weight:bold;">CONTRIBUTE</a>
+                        
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
@@ -79,53 +79,56 @@
             </div>
         </div>
     </header>
-    <section class="contact_area section_gap" style="padding:200px 70px 20px 70px;">
-            <div class="row">
-                <div class="col-lg-3">
-                    <div class="contact_info">
-                        <div class="info_item">
-                            <i class="fa fa-home"></i>
-                            <h6 style="color:rgb(255, 145, 0);">Patna,Bihar</h6>
-              
-                        </div><br>
-                        <div class="info_item">
-                            <i class="fa fa-phone"></i>
-                            <h6><a href="#" style="color:rgb(255, 145, 0);">+917885007869</a></h6>
-                     
-                        </div><br>
-                        <div class="info_item">
-                            <i class="fa fa-envelope"></i>
-                            <h6><a href="#" style="color:rgb(255, 145, 0);">support@donate.com</a></h6>
-                            
-                        </div><br>
-                    </div>
+    <div class="container">
+        <div class="row justify-content-center pt-5 mt-5 pb-5">
+          <div class="col-md-7">
+            <h1 class="display-4">Contact us</h1>
+            <hr class="bg-success">
+            <p class="pb-0 mb-0">Just get in contact with us. We are happy to answer your questions.</p>
+            <p class="text-danger small pt-0 mt-0">* All fields are required</p>
+            <form>
+              <div class="row form-group">
+                  <label for="name" class="col-form-label col-md-4">Name</label>
+                  <div class="col-md-8">
+                    <input type="text" value="Enter your name" name="name" id="name" class="form-control" required>
+                  </div>
                 </div>
-                <div class="col-lg-9">
-                    <form class="row contact_form" id="contactForm" novalidate="novalidate">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
-                            </div>
-                            <div class="form-group">
-                                <input type="email" class="form-control" id="email" name="email" placeholder="Enter email address">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="subject" name="subject" placeholder="Enter Subject">
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <textarea class="form-control" name="message" id="message" rows="1" placeholder="Enter Message"></textarea>
-                            </div>
-                        </div>
-                        <div class="col-md-12 text-right">
-                            <button type="submit" value="submit" class="btn primary_btn" onclick="validation()" >Send Message</button>
-                        </div>
-                    </form>
+             <div class="row form-group">
+                <label for="email" class="col-form-label col-md-4">E-mail</label>
+                <div class="col-md-8">
+                  <input type="email" name="email" value = "Enter your E-mail"  id="email" class="form-control" required>
                 </div>
-            </div>
+              </div>
+              <div class="row form-group">
+                <label for="options" class="col-form-label col-md-4">Subject</label>
+                <div class="col-md-8">
+                  <select class="form-select form-control" required>
+                    <option selected>How can we help you?</option>
+                    <option value="Donating">Donating</option>
+                    <option value="Events">Events</option>
+                    <option value="Auctions">Auctions</option>
+                    <option value="Exhibitions">Exhibitions</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row form-group">
+                <label for="message" class="col-form-label col-md-4">Message</label>
+                <div class="col-md-8">
+                  <textarea name="message" id="message" class="form-control" rows="3" required></textarea>
+                </div>
+              </div>
+              <div class="row form-group form-check">
+                <label class="col-form-label form-check-label col-md-8">
+                   <input class="form-check-input" type="checkbox" name="remember" required> I agree to the Terms of Service
+                </label>
+              </div>
+              <div class="d-flex justify-content-center pt-3 mt-3">
+                <button type="submit" class="btn btn-info btn-block btn-send">Send</button>
+              </div>
+            </form>
+          </div>
         </div>
-    </section>
+      </div>
      
       </body>
 </html>
