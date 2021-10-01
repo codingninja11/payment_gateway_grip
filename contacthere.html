@@ -1,134 +1,150 @@
-
 <!doctype html>
 <html lang="en">
-    <head>
-        
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="icon" href="img/favicon.png" type="image/png">
-        <title>Contact</title>
-        
-        <link rel="stylesheet" href="bootstrap.css">
-		<link rel="stylesheet" href="linericon/style.css">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="responsive.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<style>
-			body{
-		background-image:url("images/contact.jpg");
-		background-repeat: no-repeat;
-		background-size: cover;
-		}
-		
-			
-		</style>
-    </head>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <title>Contact</title>
+
+  <link rel="stylesheet" href="bootstrap.css">
+  <link rel="stylesheet" href="linericon/style.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body {
+      background-image: url("images/contact.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  </style>
+</head>
+
 <body>
-       <script>
-	   function validation()
-	   {
-			var name=document.getElementById("name").value;
-			var email=document.getElementById("email").value;
-			var subject=document.getElementById("subject").value;
-			var message=document.getElementById("message").value;
-			
-			if(name=="")
-			{
-				alert("Please Enter Name");
-			}
-			else if(email=="")
-			{
-				alert("Please Enter Email Id");
-			}
-			else if(subject=="")
-			{
-				alert("Please Enter subject");
-			}
-			else if(message=="")
-			{
-				alert("Please Write Message");
-			}
-			else 
-			{
-				alert("Message Send Successfully");
-			}
-	   }
-	   </script>
-    
-    <header class="header_area">
-        <div class="main_menu">
-            <div class="container">
-                <nav class="navbar navbar-expand-lg navbar-light">
-                    <div class="container">
-          
-                        
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
-                            <ul class="nav navbar-nav menu_nav ml-auto">
-                                <li class="nav-item"><a class="nav-link" href="index.html" style="color:black;" onMouseOver="this.style.color='orange'"onMouseOut="this.style.color='black'">Home</a></li> 
-                                <li class="nav-item"><a class="nav-link" href="about.html" style="color:black;" onMouseOver="this.style.color='orange'"onMouseOut="this.style.color='black'">About</a></li> 
-                                <li class="nav-item active"><a class="nav-link" style="color:orange;" >Contact</a></li>
-                            </ul>
-                        </div> 
-                    </div>
-                </nav>
+  <script>
+    function validation() {
+      var name = document.getElementById("name").value;
+      var email = document.getElementById("email").value;
+      var subject = document.getElementById("subject").value;
+      var message = document.getElementById("message").value;
+
+      if (name == "") {
+        alert("Please Enter Name");
+      }
+      else if (email == "") {
+        alert("Please Enter Email Id");
+      }
+      else if (subject == "") {
+        alert("Please Enter subject");
+      }
+      else if (message == "") {
+        alert("Please Write Message");
+      }
+      else {
+        alert("Message Send Successfully");
+      }
+    }
+  </script>
+
+  <header class="header_area">
+    <div class="main_menu">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container">
+
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+              <ul class="nav navbar-nav menu_nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html" style="color:black;"
+                    onMouseOver="this.style.color='orange'" onMouseOut="this.style.color='black'">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html" style="color:black;"
+                    onMouseOver="this.style.color='orange'" onMouseOut="this.style.color='black'">About</a></li>
+                <li class="nav-item active"><a class="nav-link" style="color:orange;">Contact</a></li>
+              </ul>
             </div>
-        </div>
-    </header>
-    <div class="container">
-        <div class="row justify-content-center pt-5 mt-5 pb-5">
-          <div class="col-md-7">
-            <h1 class="display-4">Contact us</h1>
-            <hr class="bg-success">
-            <p class="pb-0 mb-0">Just get in contact with us. We are happy to answer your questions.</p>
-            <p class="text-danger small pt-0 mt-0">* All fields are required</p>
-            <form>
-              <div class="row form-group">
-                  <label for="name" class="col-form-label col-md-4">Name</label>
-                  <div class="col-md-8">
-                    <input type="text" value="Enter your name" name="name" id="name" class="form-control" required>
-                  </div>
-                </div>
-             <div class="row form-group">
-                <label for="email" class="col-form-label col-md-4">E-mail</label>
-                <div class="col-md-8">
-                  <input type="email" name="email" value = "Enter your E-mail"  id="email" class="form-control" required>
-                </div>
-              </div>
-              <div class="row form-group">
-                <label for="options" class="col-form-label col-md-4">Subject</label>
-                <div class="col-md-8">
-                  <select class="form-select form-control" required>
-                    <option selected>How can we help you?</option>
-                    <option value="Donating">Donating</option>
-                    <option value="Events">Events</option>
-                    <option value="Auctions">Auctions</option>
-                    <option value="Exhibitions">Exhibitions</option>
-                  </select>
-                </div>
-              </div>
-              <div class="row form-group">
-                <label for="message" class="col-form-label col-md-4">Message</label>
-                <div class="col-md-8">
-                  <textarea name="message" id="message" class="form-control" rows="3" required></textarea>
-                </div>
-              </div>
-              <div class="row form-group form-check">
-                <label class="col-form-label form-check-label col-md-8">
-                   <input class="form-check-input" type="checkbox" name="remember" required> I agree to the Terms of Service
-                </label>
-              </div>
-              <div class="d-flex justify-content-center pt-3 mt-3">
-                <button type="submit" class="btn btn-info btn-block btn-send">Send</button>
-              </div>
-            </form>
           </div>
-        </div>
+        </nav>
       </div>
-     
-      </body>
+    </div>
+  </header>
+  <div class="container">
+    <div class="row justify-content-center pt-5 mt-5 pb-5">
+      <div class="col-md-7">
+        <h1 class="display-4">Contact us</h1>
+        <hr class="bg-success">
+        <p class="pb-0 mb-0">Just get in contact with us. We are happy to answer your questions.</p>
+        <p class="text-danger small pt-0 mt-0">* All fields are required</p>
+        <form>
+          <div class="row form-group">
+            <label for="name" class="col-form-label col-md-4">Name</label>
+            <div class="col-md-8">
+              <input type="text" value="Enter your name" name="name" id="name" class="form-control" required>
+            </div>
+          </div>
+          <div class="row form-group">
+            <label for="email" class="col-form-label col-md-4">E-mail</label>
+            <div class="col-md-8">
+              <input type="email" name="email" value="Enter your E-mail" id="email" class="form-control" required>
+            </div>
+          </div>
+          <div class="row form-group">
+            <label for="options" class="col-form-label col-md-4">Subject</label>
+            <div class="col-md-8">
+              <select class="form-select form-control" required>
+                <option selected>How can we help you?</option>
+                <option value="Donating">Donating</option>
+                <option value="Events">Events</option>
+                <option value="Auctions">Auctions</option>
+                <option value="Exhibitions">Exhibitions</option>
+              </select>
+            </div>
+          </div>
+          <div class="row form-group">
+            <label for="message" class="col-form-label col-md-4">Message</label>
+            <div class="col-md-8">
+              <textarea name="message" id="message" class="form-control" rows="3" required></textarea>
+            </div>
+          </div>
+          <div class="row form-group form-check">
+            <label class="col-form-label form-check-label col-md-8">
+              <input class="form-check-input" type="checkbox" name="remember" required> I agree to the Terms of Service
+            </label>
+          </div>
+          <div class="d-flex justify-content-center pt-3 mt-3">
+            <button type="submit" class="btn btn-info btn-block btn-send">Send</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <footer class="social-footer">
+    <ul>
+      <li>
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+          <i class="fa fa-facebook" aria-hidden="true"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com/?hl=en" target="_blank" rel="noopener noreferrer">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://twitter.com/?lang=en" target="_blank" rel="noopener noreferrer">
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+        </a>
+      </li>
+    </ul>
+  </footer>
+
+</body>
+
 </html>
