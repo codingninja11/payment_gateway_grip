@@ -2850,3 +2850,23 @@ h6 {
 		transform: rotate(360deg);
 	}
 }
+.social-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #091b27;
+}
+.social-footer ul {
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.social-footer .fa {
+  font-size: 1.3rem;
+  color: #fefefe;
+  margin: 1rem;
+}
+
